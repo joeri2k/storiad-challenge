@@ -67,5 +67,10 @@ class BookController extends Controller
         $book->delete();
         return response()->json(["success" => true]);
     }
+    
+    public function getBookById(Request $request){
+        $book = Book::find($request['id']);
 
+        return response()->json([$book]);
+    }
 }

@@ -23,3 +23,4 @@ Route::post('create-book', [BookController::class, 'createBook']);
 Route::get('get-books', [BookController::class, 'getBooks']);  
 Route::post('edit-book', [BookController::class, 'editBook']);
 Route::post('delete-book', [BookController::class, 'deleteBook']);
+Route::post('book', [BookController::class, 'getBookById']);  

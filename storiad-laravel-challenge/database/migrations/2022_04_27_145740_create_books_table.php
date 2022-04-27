@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->id();
             $table->string('book_title');
-            $table->binary('book_image');
+            $table->string('book_image');
             $table->text('description');
             $table->string('book_author');
             $table->string('book_genre');
@@ -24,7 +24,7 @@ return new class extends Migration
             $table->date('publication_date');
             $table->integer('number_of_pages');
             $table->decimal('price',8,2);
-            $table->string('amazon_link');
+            $table->text('amazon_link');
             $table->timestamps();
         });
     }

@@ -1,9 +1,18 @@
 import React from "react";
 
-function Header() {
+function Header({ title }) {
   return (
-    <div style={{ height: 75, backgroundColor: "#174554", color: "white" }}>
-      <div>BookShell</div>
+    <div
+      style={{
+        height: 75,
+        backgroundColor: "#174554",
+        color: "white",
+        display: "flex",
+      }}
+    >
+      <div style={{ fontSize: 25, alignSelf: "center", marginLeft: 20 }}>
+        {title}
+      </div>
     </div>
   );
 }
